@@ -210,7 +210,7 @@ If you use CUHK-X in your research, please cite our paper:
 ## 👥 Contact
 
 For dataset access, questions, or collaborations:
-- **Email**: siyangjiang@cuhk.edu.hk
+- **Email**: syjiang [AT] ie.cuhk.edu.hk
 - **Project Page**: [cuhkx.html](cuhkx.html)
 - **GitHub**: [CUHK-X Repository](https://github.com/your-username/CUHK-X)
 
