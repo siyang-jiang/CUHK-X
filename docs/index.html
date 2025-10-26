@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Research Project</title>
+  <title>CUHK-X: Multimodal Dataset for Human Action Recognition, Understanding and Reasoning</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ========= General Layout ========= */
@@ -141,6 +141,26 @@
       border: 1px solid #ddd;
       border-radius: 12px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      max-width: 100%; /* ensure responsiveness */
+    }
+
+    /* Video specific styling */
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Responsive video container */
+    @media (max-width: 768px) {
+      .video-container {
+        flex-direction: column;
+      }
+      
+      .video-container .preview {
+        width: 100%;
+        max-width: 400px;
+      }
     }
 
     .video-block {
@@ -252,12 +272,12 @@
     <h1>CUHK-X</h1>
     <h2>A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning</h2>
     <p class="authors">
-      <strong>Siyang Jiang</strong>, Bufang Yang, Lilin Xu, Mu Yuan, Yeerzhati Abudunuer, Kaiwei Liu, Liekang Zeng, 
-      Hongkai Chen, Zhenyu Yan, Xiaofan Jiang, and others
+    Siyang Jiang, Mu Yuan, Xiang Ji, Bufang Yang, Zeyu Liu, Lilin Xu, Yang Li, Yuting He, Liran Dong, 
+    Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen, Guoliang Xing.
     </p>
     <p class="affiliation">The Chinese University of Hong Kong</p>
     <div class="links">
-      <a href="paper/cuhkx.pdf">[Paper]</a>
+      <a href="../paper/cuhkx.pdf">[Paper]</a>
       <a href="#">[Dataset]</a>
       <a href="#">[Code]</a>
       <a href="#data-visualization">[Demo]</a>
@@ -298,7 +318,7 @@
     </ul>
 
     <div class="media">
-      <img src="images/hardware.png" alt="Hardware setup showing the multi-sensor configuration" class="preview">
+      <img src="../images/hardware.png" alt="Hardware setup showing the multi-sensor configuration" class="preview">
     </div>
   </section>
 
@@ -402,11 +422,11 @@
     </div>
 
     <div class="scroll-container">
-      <img src="images/download.png" alt="Dataset overview showing modality examples">
+      <img src="../images/download.png" alt="Dataset overview showing modality examples">
     </div>
 
     <div class="scroll-container">
-      <img src="images/action.png" alt="Action categories and distribution" class="small-image">
+      <img src="../images/action.png" alt="Action categories and distribution" class="small-image">
     </div>
   </section>
 
@@ -415,16 +435,16 @@
   <div class="video-container">
     <div class="video-block">
       <p class="caption">Depth</p>
-      <video controls class="preview">
-        <source src="videos/Depth_fixed.mp4" type="video/mp4">
+      <video controls class="preview" preload="metadata">
+        <source src="../videos/Depth_fixed.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
 
     <div class="video-block">
-      <p class="caption">Thermal </p>
-      <video controls class="preview">
-        <source src="videos/Thermal_fixed.mp4" type="video/mp4">
+      <p class="caption">Thermal</p>
+      <video controls class="preview" preload="metadata">
+        <source src="../videos/Thermal_fixed.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -433,7 +453,7 @@
   <div class="media">
     <div class="image-block">
       <p class="caption">IMU</p>
-      <img src="images/gyro.png" alt="Hardware setup" class="preview">
+      <img src="../images/gyro.png" alt="IMU sensor data visualization" class="preview">
     </div>
   </div>
 </section>
@@ -517,7 +537,7 @@
     <pre>
 @inproceedings{jiang2025cuhkx,
   title={CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning},
-  author={Jiang, Siyang and Yang, Bufang and Xu, Lilin and Yuan, Mu and Abudunuer, Yeerzhati and Liu, Kaiwei and Zeng, Liekang and Chen, Hongkai and Yan, Zhenyu and Jiang, Xiaofan and others},
+  author={Jiang, Siyang and Yuan, Mu and Ji, Xiang and Yang, Bufang and Liu, Zeyu and Xu, Lilin and Li, Yang and He, Yuting and Dong, Liran and Yan, Zhenyu and Jiang, Xiaofan and Gao, Wei and Chen, Hongkai and Xing, Guoliang},
   booktitle={Proceedings of the 26th International Conference on Sensing, Communication, and Networking (SenSys)},
   year={2025},
   organization={ACM}
